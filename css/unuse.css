@@ -1,0 +1,114 @@
+Font: 
+screen : 1920
+conatinetr:1420
+mobilr padi:16
+
+main - headinf
+/* Heavy Duty Aluminum Canopies */
+
+width: 822px;
+height: 158px;
+max-height: 158px;
+
+font-family: 'Clash Display Variable';
+font-style: normal;
+font-weight: 650;
+font-size: 72px;
+line-height: 110%;
+/* or 79px */
+letter-spacing: 0.005em;
+
+/* white/White main */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+----------- body font
+/* Custom Built to Fit Your Truck Perfectly */
+
+width: 822px;
+height: 25px;
+
+/* h3/20 medium */
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+letter-spacing: 0.01em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+--------- h3
+/* 50 */
+
+width: 46px;
+height: 39px;
+
+font-family: 'Clash Display Variable';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 39px;
+
+/* white/White main */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+
+--------------- btn
+--bg 
+padding: 20px; 
+background: #FF5F15;
+/* main/100 */
+border: 1px solid #FFBFA1;
+box-shadow: 0px 0px 10px rgba(255, 95, 21, 0.5);
+border-radius: 16px; 
+-------text
+/* Build your canopy */
+
+width: 209px;
+height: 22px;
+
+font-family: 'Clash Display Variable';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.01em;
+
+/* white/White main */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+-------------------------------------
+sec spaing: 72
+16/500
+44/600
+18/500
+32/500
+20/600

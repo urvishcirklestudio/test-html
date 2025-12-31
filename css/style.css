@@ -1,0 +1,441 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:focus,
+:active {
+    outline: none !important;
+}
+
+ 
+
+/* Font-family Outfit */
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('../fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Extralight.woff') format('woff'),
+       url('../fonts/ClashDisplay-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('../fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Light.woff') format('woff'),
+       url('../fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('../fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Bold.woff') format('woff'),
+       url('../fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Variable.woff') format('woff'),
+       url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Font-family Outfit */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --dark: #2e2e2e;
+    --orange: #FF5F15;
+    --orange-light: #FFBFA1;
+    --primary-font: 'Clash Display';
+    --h1-letter-spacing: 0.005em;
+    --h2-letter-spacing: 0.01em;
+    --h3-letter-spacing: 0.01em;
+    --h4-letter-spacing: 0.01em;
+    --h5-letter-spacing: 0.01em;
+    --h6-letter-spacing: 0.01em;
+    --body-letter-spacing: 0.01em;
+    --h1: normal normal 650 72px/1.10 var(--primary-font);
+    --h2: normal normal 600 44px/1.25 var(--primary-font);
+    --h3: normal normal 500 32px/1.21 var(--primary-font);
+    --h4: normal normal 600 28px/1.25 var(--primary-font);
+    --h5: normal normal 600 24px/1.25 var(--primary-font);
+    --h6: normal normal 600 20px/1.25 var(--primary-font);
+    --text-md: normal normal 500 18px/1.22 var(--primary-font);
+    --body: normal normal 500 16px/1.25 var(--primary-font);
+
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font: var(--body);
+    letter-spacing: var(--body-letter-spacing);
+}
+main {
+    flex: 1;
+}
+.overflow-hidden,
+body:has(.on_mobile_menu.is-open){
+    overflow: hidden;
+}
+body .hidden{
+    display: none ;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aspect-ratio{
+    padding-top: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.aspect-ratio>img,
+.aspect-ratio>video{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+}
+
+img,
+svg {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+a,
+button,
+button {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    background: transparent;
+    border: 0;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: block;
+    font-family: var(--primary-font);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+h1,
+.h1 {
+    font: var(--h1);
+    letter-spacing: var(--h1-letter-spacing);
+}
+
+h2,
+.h2 {
+    font: var(--h2);
+    letter-spacing: var(--h2-letter-spacing);
+}
+
+h3,
+.h3 {
+    font: var(--h3);
+    letter-spacing: var(--h3-letter-spacing);
+}
+
+h4,
+.h4 {
+    font: var(--h4);
+    letter-spacing: var(--h4-letter-spacing);
+}
+
+h5,
+.h5 {
+    font: var(--h5);
+    letter-spacing: var(--h5-letter-spacing);
+}
+
+h6,
+.h6 {
+    font: var(--h6);
+    letter-spacing: var(--h6-letter-spacing);
+}
+
+p {
+    font: var(--body);
+    letter-spacing: var(--body-letter-spacing);
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--btn-border);
+    background-color: var(--orange);
+    color: var(--white);
+    font: var(--text-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+}
+.btn .icon{
+    width: 14px;
+    height: 14px;
+}
+.primary-btn{
+    --btn-text:var(--white);
+    --btn-bg:var(--orange);
+    --btn-border:var(--orange-light);
+    --hover-btn-text:var(--orange);
+    --hover-btn-bg:var(--orange-light);
+    --hover-btn-border:var(--orange-light);
+}
+.secondary-btn{
+    --btn-text:var(--orange);
+    --btn-bg:var(--orange-light);
+    --btn-border:var(--orange-light);
+    --hover-btn-text:var(--white);
+    --hover-btn-bg:var(--orange);
+    --hover-btn-border:var(--orange);
+}
+.btn:not(.loading):active{
+    border-color: var(--hover-btn-border);
+    background-color: var(--hover-btn-bg);
+    color: var(--hover-btn-text);
+}
+@media (hover: hover) {
+    .btn:not(.loading):hover{
+        border-color: var(--hover-btn-border);
+        background-color: var(--hover-btn-bg);
+        color: var(--hover-btn-text);
+    }
+}
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  word-wrap: normal !important;
+}
+
+.visually-hidden--inline {
+  margin: 0;
+  height: 1em;
+}
+
+.container{
+    width: 100%;
+    max-width: 1452px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.swiper:not(.swiper-initialized) * .swiper-slide:not(:first-child) {
+    display:none;
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: #4d271c8f;
+    z-index: 9991;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu_overlay {
+    position: absolute;
+    width: calc(100vw - 375px);
+    height: 100%;
+    background: #4d271c8f;
+    left: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.overlay.is-open,
+.menu_overlay.is-open{
+    opacity: 1;
+    visibility: visible;
+}
